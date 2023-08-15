@@ -1,49 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/media.css" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="css/normalize.css" >
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="css/media.css" >
+    <link rel="icon" href="img/favicon.png" type="image/x-icon" >
     <title>Blanchard - художественная галерея</title>
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="header__container">
-          <a href="#" class="header__logo link-reset">
+          <a class="header__logo link-reset" href="#">
             <img
+              class="logo"
               src="img/logo.svg"
               alt="Логотип компании Blanchard"
-              class="logo"
-            />
+            >
           </a>
           <nav class="nav">
             <ul class="nav__list list-reset">
               <li class="nav__item">
-                <a href="#about" class="nav__link link-reset">О нас</a>
+                <a class="nav__link link-reset" href="#about">О нас</a>
               </li>
               <li class="nav__item">
-                <a href="#gallery" class="nav__link link-reset">Галерея</a>
+                <a class="nav__link link-reset" href="#gallery">Галерея</a>
               </li>
               <li class="nav__item">
-                <a href="#catalog" class="nav__link link-reset">Каталог</a>
+                <a class="nav__link link-reset" href="#catalog">Каталог</a>
               </li>
               <li class="nav__item">
-                <a href="#events" class="nav__link link-reset">Событие</a>
+                <a class="nav__link link-reset" href="#events">Событие</a>
               </li>
               <li class="nav__item">
-                <a href="#projects" class="nav__link link-reset">Проекты</a>
+                <a class="nav__link link-reset" href="#projects">Проекты</a>
               </li>
               <li class="nav__item">
-                <a href="#contacts" class="nav__link link-reset">Контакты</a>
+                <a class="nav__link link-reset" href="#contacts">Контакты</a>
               </li>
             </ul>
           </nav>
           <button
-            aria-label="кнопка поиска"
             class="header__button-search btn-reset"
+            aria-label="открыть форму поиска"
           >
             <svg
               width="28"
@@ -73,17 +74,12 @@
       <section class="hero section-offset">
         <div class="container">
           <div class="hero__wrapper">
-            <h1 class="hero__title margin-reset">
-              Прикоснитесь к&nbsp;прекрасному
-            </h1>
+            <h1 class="hero__title margin-reset">Прикоснитесь к прекрасному</h1>
             <p class="hero__descr margin-reset">
-              Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация
-              намеченных плановых заданий создаёт предпосылки для новых
-              предложений
+              Мывынуждены отталкиваться оттого, что реализация намеченных
+              плановых заданий создаёт предпосылки для новых предложений
             </p>
-            <button class="hero__btn btn-reset">
-              Подписаться на&nbsp;рассылку
-            </button>
+            <button class="hero__btn btn-reset">Подписаться нарассылку</button>
           </div>
         </div>
       </section>
@@ -94,16 +90,15 @@
             Ясность нашей позиции очевидна: семантический разбор внешних
             противодействий однозначно определяет каждого участника как
             способного принимать собственные решения касаемо распределения
-            внутренних резервов и&nbsp;ресурсов. Не&nbsp;следует, однако,
-            забывать, что высококачественный прототип будущего проекта влечёт
-            за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития.
-            Повседневная практика показывает, что высокое качество позиционных
-            исследований создаёт необходимость включения в&nbsp;производственный
-            план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса
-            распределения внутренних резервов и&nbsp;ресурсов. В&nbsp;рамках
-            спецификации современных стандартов, действия представителей
-            оппозиции набирают популярность среди определённых слоёв населения,
-            а&nbsp;значит, должны быть разоблачены.
+            внутренних резервов иресурсов. Неследует, однако, забывать, что
+            высококачественный прототип будущего проекта влечёт засобой процесс
+            внедрения имодернизации модели развития. Повседневная практика
+            показывает, что высокое качество позиционных исследований создаёт
+            необходимость включения впроизводственный план целого ряда
+            внеочередных мероприятий сучётом комплекса распределения внутренних
+            резервов иресурсов. Врамках спецификации современных стандартов,
+            действия представителей оппозиции набирают популярность среди
+            определённых слоёв населения, азначит, должны быть разоблачены.
           </p>
         </div>
       </section>
@@ -115,22 +110,25 @@
               <div class="gallery__inner">
                 <ul class="gallery__list list-reset">
                   <li class="gallery__item">
-                    <label class="gallery__label">
+                    <label
+                      class="gallery__label"
+                      aria-label="девятнадцатый век"
+                    >
                       <input
                         class="gallery__input"
                         type="checkbox"
                         name="check"
-                      />
+                      >
                       <span class="gallery__text"> XIX век </span>
                     </label>
                   </li>
                   <li class="gallery__item">
-                    <label class="gallery__label">
+                    <label class="gallery__label" aria-label="дватцатый век">
                       <input
                         class="gallery__input"
                         type="checkbox"
                         name="check"
-                      />
+                      >
                       <span class="gallery__text"> XX век </span>
                     </label>
                   </li>
@@ -140,7 +138,7 @@
                         class="gallery__input"
                         type="checkbox"
                         name="check"
-                      />
+                      >
                       <span class="gallery__text"> Современность </span>
                     </label>
                   </li>
@@ -149,25 +147,68 @@
               <div class="gallery__images">
                 <ul class="gallery__list-img list-reset">
                   <li class="gallery__list-item">
-                    <img
-                      src="img/gallery-img1-1920px.jpg"
-                      alt="первое изображение галереи"
-                      class="gallery__img"
-                    />
+                    <picture>
+                      <source
+                        srcset="img/gallery-img1-320px.jpg"
+                        media="(max-width: 320px)"
+                      >
+                      <source
+                        srcset="img/gallery-img1-1024px.jpg"
+                        media="(max-width: 1024px)"
+                      >
+                      <source
+                        srcset="img/gallery-img1-768px.jpg"
+                        media="(max-width: 768px)"
+                      >
+
+                      <img
+                        class="gallery__img"
+                        src="img/gallery-img1-1920px.jpg"
+                        alt="Изображение картины 'Казимир Малевич 'Женщина с граблями"
+                      >
+                    </picture>
                   </li>
                   <li class="gallery__list-item">
-                    <img
-                      src="img/gallery-img2-1920px.jpg"
-                      alt="второе изображение галереи"
-                      class="gallery__img"
-                    />
+                    <picture>
+                      <source
+                        srcset="img/gallery-img2-320px.jpg"
+                        media="(max-width: 320px)"
+                      >
+                      <source
+                        srcset="img/gallery-img2-1024px.jpg"
+                        media="(max-width: 1024px)"
+                      >
+                      <source
+                        srcset="img/gallery-img2-768px.jpg"
+                        media="(max-width: 768px)"
+                      >
+                      <img
+                        class="gallery__img"
+                        src="img/gallery-img2-1920px.jpg"
+                        alt="Изображение картины 'Казимир Малевич 'Женщина с граблями"
+                      >
+                    </picture>
                   </li>
                   <li class="gallery__list-item">
-                    <img
-                      src="img/gallery-img3-1920px.jpg"
-                      alt="третье изображение галереи"
-                      class="gallery__img"
-                    />
+                    <picture>
+                      <source
+                        srcset="img/gallery-img3-320px.jpg"
+                        media="(max-width: 320px)"
+                      >
+                      <source
+                        srcset="img/gallery-img3-1024px.jpg"
+                        media="(max-width: 1024px)"
+                      >
+                      <source
+                        srcset="img/gallery-img3-768px.jpg"
+                        media="(max-width: 768px)"
+                      >
+                      <img
+                        class="gallery__img"
+                        src="img/gallery-img3-1920px.jpg"
+                        alt="Изображение картины 'Казимир Малевич 'Уборка ржи"
+                      >
+                    </picture>
                   </li>
                 </ul>
               </div>
@@ -182,11 +223,11 @@
             <p class="catalog__descr section-descr">
               Акционеры крупнейших компаний, которые представляют собой яркий
               пример континентально-европейского типа политической культуры,
-              будут объявлены нарушающими общечеловеческие нормы этики
-              и&nbsp;морали. Являясь всего лишь частью общей картины,
-              стремящиеся вытеснить традиционное производство, нанотехнологии
-              и&nbsp;по&nbsp;сей день остаются уделом либералов, которые жаждут
-              быть функционально разнесены на&nbsp;независимые элементы.
+              будут объявлены нарушающими общечеловеческие нормы этики иморали.
+              Являясь всего лишь частью общей картины, стремящиеся вытеснить
+              традиционное производство, нанотехнологии ипосей день остаются
+              уделом либералов, которые жаждут быть функционально разнесены
+              нанезависимые элементы.
             </p>
             <ul class="catalog__list list-reset">
               <li class="catalog__list-item">
@@ -195,40 +236,39 @@
                     srcset="img/catalog-img1-1024px.jpg"
                     type="image/jpg"
                     media="(max-width: 1200px)"
-                  />
+                  >
                   <source
                     srcset="img/catalog-img1-768px.jpg"
                     type="image/jpg"
                     media="(max-width: 768px)"
-                  />
+                  >
                   <source
                     srcset="img/catalog-img1-320px.jpg"
                     type="image/jpg"
                     media="(max-width: 320px)"
-                  />
+                  >
                   <img
                     class="catalog__img"
                     src="img/catalog-img1-1920px.jpg"
                     alt="Доменико Гирландайо"
-                  />
+                  >
                 </picture>
                 <div class="catalog__inner">
                   <h3 class="catalog__inner-title section-subtitle">
                     Доменико Гирландайо
                   </h3>
-                  <time class="catalog__inner-time"
-                    >2 июня 1448–11 января 1494</time
+                  <span class="catalog__inner-time"
+                    >2 июня 1448–11 января 1494</span
                   >
                   <p class="catalog__inner-descr section-descr">
-                    Один из&nbsp;ведущих флорентийских художников Кватроченто,
+                    Один изведущих флорентийских художников Кватроченто,
                     основатель художественной династии, которую продолжили его
-                    брат Давид и&nbsp;сын Ридольфо. Глава художественной
-                    мастерской, где юный Микеланджело в&nbsp;течение года
-                    овладевал профессиональными навыками. Автор фресковых
-                    циклов, в&nbsp;которых выпукло, со&nbsp;всевозможными
-                    подробностями показана домашняя жизнь библейских персонажей
-                    (в&nbsp;их&nbsp;роли выступают знатные граждане Флоренции
-                    в&nbsp;костюмах того времени).
+                    брат Давид исын Ридольфо. Глава художественной мастерской,
+                    где юный Микеланджело втечение года овладевал
+                    профессиональными навыками. Автор фресковых циклов, вкоторых
+                    выпукло, совсевозможными подробностями показана домашняя
+                    жизнь библейских персонажей (вихроли выступают знатные
+                    граждане Флоренции вкостюмах того времени).
                   </p>
                 </div>
               </li>
@@ -237,36 +277,35 @@
                   <source
                     srcset="img/catalog-img2-1024px.jpg"
                     media="(max-width: 1200px)"
-                  />
+                  >
                   <source
                     srcset="img/catalog-img2-768px.jpg"
                     media="(max-width: 768px)"
-                  />
+                  >
                   <source
                     srcset="img/catalog-img2-320px.jpg"
                     media="(max-width: 320px)"
-                  />
+                  >
                   <img
                     class="catalog__img"
                     src="img/catalog-img2-1920px.jpg"
                     alt="Андреа дель Верроккьо"
-                  />
+                  >
                 </picture>
                 <div class="catalog__inner">
                   <h3 class="catalog__inner-title section-subtitle">
                     Андреа дель Верроккьо
                   </h3>
-                  <time class="catalog__inner-time">1435–10 октября 1488</time>
+                  <span class="catalog__inner-time">1435–10 октября 1488</span>
                   <p class="catalog__inner-descr section-descr" id="sd">
-                    Творческий путь молодого Андреа, как и&nbsp;многих
-                    знаменитых художников и&nbsp;скульпторов эпохи Возрождения,
-                    начался с&nbsp;обучения и&nbsp;работы в&nbsp;одной
-                    из&nbsp;ювелирных мастерских Флоренции. Там
-                    он&nbsp;занимался не&nbsp;только изготовлением драгоценных
-                    украшений, но&nbsp;и&nbsp;познавал основы живописи, пластики
-                    и&nbsp;архитектуры. Его первым учителем был Джулиано
-                    Веррокки, фамилию которого в&nbsp;несколько изменённом виде
-                    Андреа заимствовал для своего будущего псевдонима.
+                    Творческий путь молодого Андреа, как имногих знаменитых
+                    художников искульпторов эпохи Возрождения, начался собучения
+                    иработы водной изювелирных мастерских Флоренции. Там
+                    онзанимался нетолько изготовлением драгоценных украшений,
+                    ноипознавал основы живописи, пластики иархитектуры. Его
+                    первым учителем был Джулиано Веррокки, фамилию которого
+                    внесколько изменённом виде Андреа заимствовал для своего
+                    будущего псевдонима.
                   </p>
                 </div>
               </li>
@@ -275,36 +314,35 @@
                   <source
                     srcset="img/catalog-img3-320px.jpg"
                     media="(max-width: 320px)"
-                  />
+                  >
                   <source
                     srcset="img/catalog-img3-768px.jpg"
                     media="(max-width: 768px)"
-                  />
+                  >
                   <source
                     srcset="img/catalog-img3-1024px.jpg"
                     media="(max-width: 1200px)"
-                  />
+                  >
                   <img
                     class="catalog__img"
                     src="img/catalog-img3-1920px.jpg"
                     alt="Лоренцо ди Креди"
-                  />
+                  >
                 </picture>
                 <div class="catalog__inner">
                   <h3 class="catalog__inner-title section-subtitle">
                     Лоренцо ди Креди
                   </h3>
-                  <time class="catalog__inner-time">1459–12 января 1537</time>
+                  <span class="catalog__inner-time">1459–12 января 1537</span>
                   <p class="catalog__inner-descr section-descr">
-                    Один из&nbsp;ведущих флорентийских художников Кватроченто,
+                    Один изведущих флорентийских художников Кватроченто,
                     основатель художественной династии, которую продолжили его
-                    брат Давид и&nbsp;сын Ридольфо. Глава художественной
-                    мастерской, где юный Микеланджело в&nbsp;течение года
-                    овладевал профессиональными навыками. Автор фресковых
-                    циклов, в&nbsp;которых выпукло, со&nbsp;всевозможными
-                    подробностями показана домашняя жизнь библейских персонажей
-                    (в&nbsp;их&nbsp;роли выступают знатные граждане Флоренции
-                    в&nbsp;костюмах того времени).
+                    брат Давид исын Ридольфо. Глава художественной мастерской,
+                    где юный Микеланджело втечение года овладевал
+                    профессиональными навыками. Автор фресковых циклов, вкоторых
+                    выпукло, совсевозможными подробностями показана домашняя
+                    жизнь библейских персонажей (вихроли выступают знатные
+                    граждане Флоренции вкостюмах того времени).
                   </p>
                 </div>
               </li>
@@ -321,29 +359,31 @@
                 <source
                   srcset="img/events-img1-1024px.jpg"
                   media="(max-width: 320px)"
-                />
+                >
                 <source
                   srcset="img/events-img1-768px.jpg"
                   media="(max-width: 768px)"
-                />
+                >
                 <source
                   srcset="img/events-img1-1024px.jpg"
                   media="(max-width: 1024px)"
-                />
+                >
                 <img
                   class="events__img"
                   src="img/events-img1-1920px.jpg"
-                  alt="Книжная гравюра в живом восприятии"
-                />
+                  alt="Женщина рисует граверем"
+                >
               </picture>
 
               <div class="events__content">
-                <time class="events__content-time">
-                  <p class="margin-reset">Музей им. Щусева</p>
-                  с 20 марта по 30 апреля</time
+                <p class="events__content-text margin-reset">
+                  Музей им. Щусева
+                </p>
+                <span class="events__content-time">
+                  с 20 марта по 30 апреля</span
                 >
                 <h3 class="events__content-title section-subtitle">
-                  Книжная гравюра в&nbsp;живом восприятии
+                  Книжная гравюра вживом восприятии
                 </h3>
                 <p class="events__content-descr section-descr">
                   Один из ведущих флорентийских художников Кватроченто,
@@ -358,30 +398,27 @@
                 <source
                   srcset="img/events-img2-1024px.jpg"
                   media="(max-width: 320px)"
-                />
+                >
                 <source
                   srcset="img/events-img2-768px.jpg"
                   media="(max-width: 768px)"
-                />
+                >
                 <source
                   srcset="img/events-img2-1024px.jpg"
                   media="(max-width: 1024px)"
-                />
+                >
                 <img
                   class="events__img"
                   src="img/events-img2-1920px.jpg"
-                  alt="Открытая дискуссия. Дмитрий Петров и Сергей
-                  Ильин."
-                />
+                  alt="Разговор Дмитрия Петрова и Сергея Ильина"
+                >
               </picture>
 
               <div class="events__content">
-                <time class="events__content-time"
-                  ><p class="margin-reset">ММОМА</p>
-                  24&nbsp;марта 19:00</time
-                >
+                <p class="events__content-text margin-reset">ММОМА</p>
+                <span class="events__content-time"> 24 марта 19:00</span>
                 <h3 class="events__content-title section-subtitle">
-                  &laquo;Открытая дискуссия&raquo;. Дмитрий Петров и&nbsp;Сергей
+                  &laquo;Открытая дискуссия&raquo;. Дмитрий Петров иСергей
                   Ильин.
                 </h3>
                 <p class="events__content-descr section-descr">
@@ -396,26 +433,26 @@
                 <source
                   srcset="img/events-img3-1024px.jpg"
                   media="(max-width: 320px)"
-                />
+                >
                 <source
                   srcset="img/events-img3-768px.jpg"
                   media="(max-width: 768px)"
-                />
+                >
                 <source
                   srcset="img/events-img3-1024px.jpg"
                   media="(max-width: 1024px)"
-                />
+                >
                 <img
                   class="events__img"
                   src="img/events-img3-1920px.jpg"
-                  alt=""
-                />
+                  alt="Выставка картин под названием «Формация 2020»"
+                >
               </picture>
 
               <div class="events__content">
-                <time class="events__content-time"
-                  ><p class="margin-reset">Еврейский музей</p>
-                  с&nbsp;31&nbsp;марта по&nbsp;21&nbsp;апреля</time
+                <p class="events__content-text margin-reset">Еврейский музей</p>
+                <span class="events__content-time">
+                  с 31марта по 21 апреля</span
                 >
                 <h3 class="events__content-title section-subtitle">
                   Выставка «Формация 2020»
@@ -438,49 +475,47 @@
             <p class="projects__descr section-descr">
               Предварительные выводы: постоянное информационно-пропагандистское
               обеспечение нашей деятельности однозначно фиксирует необходимость
-              своевременного выполнения сверхзадачи. А&nbsp;ещё независимые
-              государства смешаны с&nbsp;не&nbsp;уникальными данными
-              до&nbsp;степени совершённой неузнаваемости, из-за чего возрастает
-              их&nbsp;статус бесполезности. Прежде всего, постоянное
-              информационно-пропагандистское обеспечение нашей деятельности
-              однозначно фиксирует необходимость экономической целесообразности
-              принимаемых решений. И&nbsp;нет сомнений, что действия
-              представителей оппозиции могут быть рассмотрены исключительно
-              в&nbsp;разрезе маркетинговых и&nbsp;финансовых предпосылок.
-              Банальные, но&nbsp;неопровержимые выводы, а&nbsp;также
-              представители современных социальных резервов призывают нас
-              к&nbsp;новым свершениям, которые, в&nbsp;свою очередь, должны быть
-              смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени
-              совершённой неузнаваемости.
+              своевременного выполнения сверхзадачи. Аещё независимые
+              государства смешаны снеуникальными данными достепени совершённой
+              неузнаваемости, из-за чего возрастает ихстатус бесполезности.
+              Прежде всего, постоянное информационно-пропагандистское
+              обеспечение нашей деятельности однозначно фиксирует необходимость
+              экономической целесообразности принимаемых решений. Инет сомнений,
+              что действия представителей оппозиции могут быть рассмотрены
+              исключительно вразрезе маркетинговых ифинансовых предпосылок.
+              Банальные, нонеопровержимые выводы, атакже представители
+              современных социальных резервов призывают нас кновым свершениям,
+              которые, всвою очередь, должны быть смешаны снеуникальными данными
+              достепени совершённой неузнаваемости.
             </p>
-            <h4 class="projects__subtitle section-subtitle">
+            <h3 class="projects__subtitle section-subtitle">
               Партнёры проектов:
-            </h4>
+            </h3>
             <ul class="projects__list list-reset">
               <li class="projects__item">
                 <picture class="projects__picture">
                   <source
                     srcset="img/partner-img1-320px.png"
-                    media="(max-width: 320px)"
-                  />
+                    media="(max-width: 350px)"
+                  >
                   <img
-                    src="img/partner-img1-1920px.png"
-                    alt=""
                     class="projects__img"
-                  />
+                    src="img/partner-img1-1920px.png"
+                    alt="Партнёр:Freelans Foundation"
+                  >
                 </picture>
               </li>
               <li class="projects__item">
                 <picture class="projects__picture">
                   <source
                     srcset="img/partner-img2-320px.png"
-                    media="(max-width: 320px)"
-                  />
+                    media="(max-width: 350px)"
+                  >
                   <img
-                    src="img/partner-img2-1920px.png"
-                    alt=""
                     class="projects__img"
-                  />
+                    src="img/partner-img2-1920px.png"
+                    alt="Партнёр:Institute for Contemporary Art"
+                  >
                 </picture>
               </li>
             </ul>
@@ -490,6 +525,7 @@
       <section class="contacts">
         <div class="contacts__top">
           <div class="contacts__container container">
+            <h2 class="contacts__title" id="contacts"></h2>
             <div class="contacts-address">
               <h3 class="contacts-address__subtitle section-subtitle">
                 Шоурум №4
@@ -509,7 +545,7 @@
                   type="text"
                   name="name"
                   placeholder="Имя*"
-                />
+                >
               </div>
               <div class="contacts-form__phone-box">
                 <p class="contacts-form__valid-sign valid-phone">
@@ -520,20 +556,24 @@
                   type="tel"
                   name="tel"
                   placeholder="Телефон*"
-                />
+                >
               </div>
-              <button class="contacts-form__button" type="submit">
+              <button class="contacts-form__button btn-reset" type="submit">
                 Заказать <span>обратный звонок</span>
               </button>
             </form>
 
             <div class="contacts-social">
               <h3 class="contacts-social__subtitle section-subtitle">
-                Связаться в&nbsp;один клик
+                Связаться в один клик
               </h3>
               <ul class="contacts-social__list list-reset">
                 <li class="contacts-social__item">
-                  <a class="contacts-social__link" href="#">
+                  <a
+                    class="contacts-social__link"
+                    href="#"
+                    aria-label="связаться с нами по Ватцапу"
+                  >
                     <svg
                       class="contacts-social__whatsapp"
                       width="40"
@@ -554,7 +594,11 @@
                   </a>
                 </li>
                 <li class="contacts-social__item">
-                  <a class="contacts-social__link" href="#">
+                  <a
+                    class="contacts-social__link"
+                    href="#"
+                    aria-label="связаться с нами по Телеграмму"
+                  >
                     <svg
                       class="contacts-social__telegram"
                       width="40"
@@ -597,16 +641,20 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__container">
-          <a href="" class="footer__logo link-reset">
-            <img src="img/logo.svg" alt="Логотип компании Blanchard" />
+          <a class="footer__logo link-reset" href="#">
+            <img
+              class="logo"
+              src="img/logo.svg"
+              alt="Логотип компании Blanchard"
+            >
           </a>
 
           <ul class="footer__right-list list-reset">
             <li class="footer__list-item">
               <a
+                class="footer__right-link link-reset"
                 aria-label="наша страница вконтакте"
                 href="#"
-                class="footer__right-link link-reset"
               >
                 <svg
                   class="footer__right-svg"
@@ -625,9 +673,9 @@
             </li>
             <li class="footer__list-item">
               <a
+                class="footer__right-link link-reset"
                 aria-label="наша страница в одноклассниках"
                 href="#"
-                class="footer__right-link link-reset"
               >
                 <svg
                   class="footer__right-svg"
