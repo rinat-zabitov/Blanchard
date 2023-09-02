@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <link rel="stylesheet" href="css/normalize.css" >
-    <link rel="stylesheet" href="css/style.css" >
-    <link rel="stylesheet" href="css/media.css" >
-    <link rel="icon" href="img/favicon.png" type="image/x-icon" >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="icon" href="img/favicon.png" type="image/x-icon" />
     <title>Blanchard - художественная галерея</title>
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="header__container">
-          <a class="header__logo link-reset" href="#">
-            <img
-              class="logo"
-              src="img/logo.svg"
-              alt="Логотип компании Blanchard"
-            >
-          </a>
+          <div class="header__link-block">
+            <a class="header__logo link-reset" href="#">
+              <img
+                class="logo"
+                src="img/logo.svg"
+                alt="Логотип компании Blanchard"
+              />
+            </a>
+          </div>
           <nav class="nav">
             <ul class="nav__list list-reset">
               <li class="nav__item">
@@ -79,7 +81,7 @@
               Мывынуждены отталкиваться оттого, что реализация намеченных
               плановых заданий создаёт предпосылки для новых предложений
             </p>
-            <button class="hero__btn btn-reset">Подписаться нарассылку</button>
+            <button class="hero__btn btn-reset">Подписаться на рассылку</button>
           </div>
         </div>
       </section>
@@ -118,7 +120,7 @@
                         class="gallery__input"
                         type="checkbox"
                         name="check"
-                      >
+                      />
                       <span class="gallery__text"> XIX век </span>
                     </label>
                   </li>
@@ -128,7 +130,7 @@
                         class="gallery__input"
                         type="checkbox"
                         name="check"
-                      >
+                      />
                       <span class="gallery__text"> XX век </span>
                     </label>
                   </li>
@@ -138,7 +140,7 @@
                         class="gallery__input"
                         type="checkbox"
                         name="check"
-                      >
+                      />
                       <span class="gallery__text"> Современность </span>
                     </label>
                   </li>
@@ -151,21 +153,21 @@
                       <source
                         srcset="img/gallery-img1-320px.jpg"
                         media="(max-width: 320px)"
-                      >
+                      />
                       <source
                         srcset="img/gallery-img1-1024px.jpg"
                         media="(max-width: 1024px)"
-                      >
+                      />
                       <source
                         srcset="img/gallery-img1-768px.jpg"
                         media="(max-width: 768px)"
-                      >
+                      />
 
                       <img
                         class="gallery__img"
                         src="img/gallery-img1-1920px.jpg"
                         alt="Изображение картины 'Казимир Малевич 'Женщина с граблями"
-                      >
+                      />
                     </picture>
                   </li>
                   <li class="gallery__list-item">
@@ -173,20 +175,20 @@
                       <source
                         srcset="img/gallery-img2-320px.jpg"
                         media="(max-width: 320px)"
-                      >
+                      />
                       <source
                         srcset="img/gallery-img2-1024px.jpg"
                         media="(max-width: 1024px)"
-                      >
+                      />
                       <source
                         srcset="img/gallery-img2-768px.jpg"
                         media="(max-width: 768px)"
-                      >
+                      />
                       <img
                         class="gallery__img"
                         src="img/gallery-img2-1920px.jpg"
                         alt="Изображение картины 'Казимир Малевич 'Женщина с граблями"
-                      >
+                      />
                     </picture>
                   </li>
                   <li class="gallery__list-item">
@@ -194,20 +196,20 @@
                       <source
                         srcset="img/gallery-img3-320px.jpg"
                         media="(max-width: 320px)"
-                      >
+                      />
                       <source
                         srcset="img/gallery-img3-1024px.jpg"
                         media="(max-width: 1024px)"
-                      >
+                      />
                       <source
                         srcset="img/gallery-img3-768px.jpg"
                         media="(max-width: 768px)"
-                      >
+                      />
                       <img
                         class="gallery__img"
                         src="img/gallery-img3-1920px.jpg"
                         alt="Изображение картины 'Казимир Малевич 'Уборка ржи"
-                      >
+                      />
                     </picture>
                   </li>
                 </ul>
@@ -236,29 +238,29 @@
                     srcset="img/catalog-img1-1024px.jpg"
                     type="image/jpg"
                     media="(max-width: 1200px)"
-                  >
+                  />
                   <source
                     srcset="img/catalog-img1-768px.jpg"
                     type="image/jpg"
                     media="(max-width: 768px)"
-                  >
+                  />
                   <source
                     srcset="img/catalog-img1-320px.jpg"
                     type="image/jpg"
                     media="(max-width: 320px)"
-                  >
+                  />
                   <img
                     class="catalog__img"
                     src="img/catalog-img1-1920px.jpg"
                     alt="Доменико Гирландайо"
-                  >
+                  />
                 </picture>
                 <div class="catalog__inner">
                   <h3 class="catalog__inner-title section-subtitle">
                     Доменико Гирландайо
                   </h3>
-                  <span class="catalog__inner-time"
-                    >2 июня 1448–11 января 1494</span
+                  <time class="catalog__inner-time"
+                    >2 июня 1448–11 января 1494</time
                   >
                   <p class="catalog__inner-descr section-descr">
                     Один изведущих флорентийских художников Кватроченто,
@@ -277,26 +279,26 @@
                   <source
                     srcset="img/catalog-img2-1024px.jpg"
                     media="(max-width: 1200px)"
-                  >
+                  />
                   <source
                     srcset="img/catalog-img2-768px.jpg"
                     media="(max-width: 768px)"
-                  >
+                  />
                   <source
                     srcset="img/catalog-img2-320px.jpg"
                     media="(max-width: 320px)"
-                  >
+                  />
                   <img
                     class="catalog__img"
                     src="img/catalog-img2-1920px.jpg"
                     alt="Андреа дель Верроккьо"
-                  >
+                  />
                 </picture>
                 <div class="catalog__inner">
                   <h3 class="catalog__inner-title section-subtitle">
                     Андреа дель Верроккьо
                   </h3>
-                  <span class="catalog__inner-time">1435–10 октября 1488</span>
+                  <time class="catalog__inner-time">1435–10 октября 1488</time>
                   <p class="catalog__inner-descr section-descr" id="sd">
                     Творческий путь молодого Андреа, как имногих знаменитых
                     художников искульпторов эпохи Возрождения, начался собучения
@@ -314,26 +316,26 @@
                   <source
                     srcset="img/catalog-img3-320px.jpg"
                     media="(max-width: 320px)"
-                  >
+                  />
                   <source
                     srcset="img/catalog-img3-768px.jpg"
                     media="(max-width: 768px)"
-                  >
+                  />
                   <source
                     srcset="img/catalog-img3-1024px.jpg"
                     media="(max-width: 1200px)"
-                  >
+                  />
                   <img
                     class="catalog__img"
                     src="img/catalog-img3-1920px.jpg"
                     alt="Лоренцо ди Креди"
-                  >
+                  />
                 </picture>
                 <div class="catalog__inner">
                   <h3 class="catalog__inner-title section-subtitle">
                     Лоренцо ди Креди
                   </h3>
-                  <span class="catalog__inner-time">1459–12 января 1537</span>
+                  <time class="catalog__inner-time">1459–12 января 1537</time>
                   <p class="catalog__inner-descr section-descr">
                     Один изведущих флорентийских художников Кватроченто,
                     основатель художественной династии, которую продолжили его
@@ -358,29 +360,28 @@
               <picture>
                 <source
                   srcset="img/events-img1-1024px.jpg"
-                  media="(max-width: 320px)"
-                >
+                  media="(max-width: 500px)"
+                />
                 <source
                   srcset="img/events-img1-768px.jpg"
                   media="(max-width: 768px)"
-                >
+                />
                 <source
                   srcset="img/events-img1-1024px.jpg"
                   media="(max-width: 1024px)"
-                >
+                />
                 <img
                   class="events__img"
                   src="img/events-img1-1920px.jpg"
                   alt="Женщина рисует граверем"
-                >
+                />
               </picture>
-
               <div class="events__content">
                 <p class="events__content-text margin-reset">
                   Музей им. Щусева
                 </p>
-                <span class="events__content-time">
-                  с 20 марта по 30 апреля</span
+                <time class="events__content-time">
+                  с 20 марта по 30 апреля</time
                 >
                 <h3 class="events__content-title section-subtitle">
                   Книжная гравюра вживом восприятии
@@ -390,80 +391,84 @@
                   основатель художественной династии, которую продолжили его
                   брат Давид и сын Ридольфо
                 </p>
+                <a class="events__content-link link-reset" href="#"
+                  >Подробнее</a
+                >
               </div>
-              <a href="@" class="events__content-link link-reset">Подробнее</a>
             </li>
             <li class="events__item">
               <picture>
                 <source
                   srcset="img/events-img2-1024px.jpg"
-                  media="(max-width: 320px)"
-                >
+                  media="(max-width: 500px)"
+                />
                 <source
                   srcset="img/events-img2-768px.jpg"
                   media="(max-width: 768px)"
-                >
+                />
                 <source
                   srcset="img/events-img2-1024px.jpg"
                   media="(max-width: 1024px)"
-                >
+                />
                 <img
                   class="events__img"
                   src="img/events-img2-1920px.jpg"
                   alt="Разговор Дмитрия Петрова и Сергея Ильина"
-                >
+                />
               </picture>
-
               <div class="events__content">
                 <p class="events__content-text margin-reset">ММОМА</p>
-                <span class="events__content-time"> 24 марта 19:00</span>
+                <time class="events__content-time"> 24 марта 19:00</time>
                 <h3 class="events__content-title section-subtitle">
-                  &laquo;Открытая дискуссия&raquo;. Дмитрий Петров иСергей
+                  &laquo;Открытая дискуссия&raquo;. Дмитрий Петров и Сергей
                   Ильин.
                 </h3>
                 <p class="events__content-descr section-descr">
                   Высокий уровень вовлечения представителей целевой аудитории
                   является чётким доказательством простого факта
                 </p>
+                <a class="events__content-link link-reset" href="#"
+                  >Подробнее</a
+                >
               </div>
-              <a href="@" class="events__content-link link-reset">Подробнее</a>
             </li>
             <li class="events__item">
               <picture>
                 <source
                   srcset="img/events-img3-1024px.jpg"
-                  media="(max-width: 320px)"
-                >
+                  media="(max-width: 500px)"
+                />
                 <source
                   srcset="img/events-img3-768px.jpg"
                   media="(max-width: 768px)"
-                >
+                />
                 <source
                   srcset="img/events-img3-1024px.jpg"
                   media="(max-width: 1024px)"
-                >
+                />
                 <img
                   class="events__img"
                   src="img/events-img3-1920px.jpg"
                   alt="Выставка картин под названием «Формация 2020»"
-                >
+                />
               </picture>
-
               <div class="events__content">
                 <p class="events__content-text margin-reset">Еврейский музей</p>
-                <span class="events__content-time">
-                  с 31марта по 21 апреля</span
+                <time class="events__content-time">
+                  с 31марта по 21 апреля</time
                 >
                 <h3 class="events__content-title section-subtitle">
                   Выставка «Формация 2020»
                 </h3>
                 <p class="events__content-descr section-descr">
-                  Идейные соображения высшего порядка, а также современная
-                  методология разработки играет важную роль в формировании
+                  Идейные соображения высшего порядка, а также современная
+                  методология разработки играет важную роль в формировании
                   глубокомысленных рассуждений
                 </p>
+                <a class="events__content-link link-reset" href="#"
+                  >Подробнее</a
+                >
               </div>
-              <a href="@" class="events__content-link link-reset">Подробнее</a>
             </li>
           </ul>
         </div>
@@ -497,12 +502,12 @@
                   <source
                     srcset="img/partner-img1-320px.png"
                     media="(max-width: 350px)"
-                  >
+                  />
                   <img
                     class="projects__img"
                     src="img/partner-img1-1920px.png"
-                    alt="Партнёр:Freelans Foundation"
-                  >
+                    alt="Логотип партнёра:Freelans Foundation"
+                  />
                 </picture>
               </li>
               <li class="projects__item">
@@ -510,12 +515,12 @@
                   <source
                     srcset="img/partner-img2-320px.png"
                     media="(max-width: 350px)"
-                  >
+                  />
                   <img
                     class="projects__img"
                     src="img/partner-img2-1920px.png"
-                    alt="Партнёр:Institute for Contemporary Art"
-                  >
+                    alt="Логотип партнёра:Institute for Contemporary Art"
+                  />
                 </picture>
               </li>
             </ul>
@@ -525,7 +530,7 @@
       <section class="contacts">
         <div class="contacts__top">
           <div class="contacts__container container">
-            <h2 class="contacts__title" id="contacts"></h2>
+            <h2 class="contacts__title" id="contacts">Контакты</h2>
             <div class="contacts-address">
               <h3 class="contacts-address__subtitle section-subtitle">
                 Шоурум №4
@@ -545,7 +550,7 @@
                   type="text"
                   name="name"
                   placeholder="Имя*"
-                >
+                />
               </div>
               <div class="contacts-form__phone-box">
                 <p class="contacts-form__valid-sign valid-phone">
@@ -556,7 +561,7 @@
                   type="tel"
                   name="tel"
                   placeholder="Телефон*"
-                >
+                />
               </div>
               <button class="contacts-form__button btn-reset" type="submit">
                 Заказать <span>обратный звонок</span>
@@ -646,7 +651,7 @@
               class="logo"
               src="img/logo.svg"
               alt="Логотип компании Blanchard"
-            >
+            />
           </a>
 
           <ul class="footer__right-list list-reset">
