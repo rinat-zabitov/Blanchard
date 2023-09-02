@@ -1,6 +1,6 @@
 @media (max-width: 1300px) {
   .header {
-    height: 147px;
+    height: 148px;
   }
 
   .header__container {
@@ -51,7 +51,7 @@
   }
 
   .hero__wrapper {
-    padding: 100px 0 102px 0;
+    padding: 100px 0 100px 0;
   }
 
   .hero__descr {
@@ -60,6 +60,10 @@
 
   .gallery {
     background-image: url("../img/gallery-bg1024px.jpg");
+  }
+
+  .gallery__box {
+    padding: 80px 0 79px 0;
   }
 
   .gallery__title {
@@ -83,7 +87,7 @@
   }
 
   .catalog__list-item:not(:last-child) {
-    margin-bottom: 56px;
+    margin-bottom: 52px;
   }
 
   .catalog__descr {
@@ -107,12 +111,11 @@
   }
 
   .events__content {
-    height: 290px;
-    padding: 13px 32px 0;
+    padding: 10px 32px 100px 32px;
   }
 
-  .events__item:not(:last-child) {
-    margin-right: 27px;
+  .events__list {
+    gap: 28px;
   }
 
   .events__content-time {
@@ -145,7 +148,7 @@
   .contacts__container {
     align-items: flex-start;
     padding-top: 40px;
-    padding-bottom: 42px;
+    padding-bottom: 39px;
     row-gap: 0px;
   }
 
@@ -205,7 +208,7 @@
   }
 
   .hero__wrapper {
-    padding: 87px 0 87px 0;
+    padding: 87px 0 84px 0;
   }
 
   .hero__descr {
@@ -239,17 +242,18 @@
     flex-direction: column;
   }
 
+  .events__content-time {
+    margin-bottom: 2px;
+  }
+
   .events__item {
     width: 100%;
     justify-content: flex-start;
     min-height: 528px;
   }
 
-  .events__item:not(:last-child) {
-    margin-right: 0px;
-  }
-  .events__item:not(:last-child) {
-    margin-bottom: 30px;
+  .events__list {
+    gap: 29px;
   }
 
   .events__img {
@@ -260,12 +264,16 @@
     margin-bottom: 14px;
   }
 
-  .events__content-descr {
-    margin-bottom: 35px;
+  .events__content {
+    padding: 10px 32px 135px 32px;
+  }
+
+  .projects {
+    margin-bottom: 77px;
   }
 
   .projects__descr {
-    margin-bottom: 25px;
+    margin-bottom: 27px;
   }
 
   .projects__item {
@@ -281,7 +289,7 @@
   }
 
   .contacts__container {
-    padding-bottom: 42px;
+    padding-bottom: 40px;
   }
 
   .contacts-address {
@@ -289,14 +297,18 @@
   }
 
   .contacts-address__subtitle {
-    margin-bottom: 6px;
+    margin-bottom: 11px;
   }
 
   .contacts-form {
     flex-wrap: wrap;
     margin-bottom: 61px;
-    row-gap: 13px;
+    row-gap: 12px;
     column-gap: 20px;
+  }
+
+  .contacts-social__subtitle {
+    margin-bottom: 6px;
   }
 
   .contacts-form__input {
@@ -323,12 +335,12 @@
 }
 
 @media (max-width: 670px) {
-  .container {
-    padding: 0 15px;
-  }
-
   .header {
     height: 78px;
+  }
+
+  .container {
+    padding: 0 15px;
   }
 
   .header__container {
@@ -352,6 +364,7 @@
   .header__button-search > svg {
     width: 18px;
     height: 18px;
+    margin-right: 15px;
   }
 
   .hero {
@@ -360,20 +373,26 @@
     background-position: 0 -77px;
   }
 
+  .hero .container {
+    padding: 0 10px;
+  }
+
   .hero__title {
-    margin-bottom: 7px;
+    margin-bottom: 10px;
     text-align: center;
     font-size: 32px;
-    line-height: 28px;
+    line-height: 27px;
+    margin-inline: 16px;
   }
 
   .hero__wrapper {
-    width: 100%;
     padding: 51px 0 49px 0;
+    text-align: center;
+    width: 100%;
   }
 
   .hero__descr {
-    margin: 0 14px 38px 14px;
+    margin: 0 28px 38px;
     text-align: center;
     font-size: 12px;
     font-weight: 400;
@@ -381,8 +400,9 @@
   }
 
   .hero__btn {
-    margin: 0 46px;
-    padding: 9px 13px 8px 16px;
+    height: 40px;
+    padding: 8px 16px 10px 16px;
+    text-align: center;
     font-size: 12px;
     font-weight: 700;
     line-height: normal;
@@ -460,7 +480,7 @@
   }
 
   .catalog__list-item:not(:last-child) {
-    margin-bottom: 34px;
+    margin-bottom: 30px;
   }
 
   .catalog {
@@ -476,7 +496,7 @@
   }
 
   .events__content {
-    padding: 19px 17px 0 21px;
+    padding: 13px 17px 143px 21px;
   }
 
   .events__content-title {
@@ -487,12 +507,12 @@
     margin-bottom: 7px;
   }
 
-  .events__item:not(:last-child) {
-    margin-bottom: 19px;
+  .events__list {
+    gap: 19px;
   }
 
   .events__content-link {
-    left: 29px;
+    left: 22px;
     bottom: 49px;
   }
 
@@ -505,7 +525,7 @@
   }
 
   .projects__descr {
-    margin-bottom: 57px;
+    margin-bottom: 54px;
   }
 
   .projects__subtitle {
@@ -618,12 +638,20 @@
 }
 
 @media (max-width: 500px) {
+  .header .container {
+    padding: 0 0 0 15px;
+  }
+
   .gallery__list-item {
     width: 290px;
   }
 
   .events__item {
     min-height: 683px;
+  }
+
+  .events__content {
+    padding: 13px 17px 129px 21px;
   }
 
   .catalog__inner-title {
